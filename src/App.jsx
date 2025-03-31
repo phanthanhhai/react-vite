@@ -4,11 +4,22 @@ import TodoNew from './components/todo/todonew'
 import reactLogo from './assets/react.svg';
 const App = () => {
 
+  const phanhai = " Phan Hai";
+  const age = 21;
+  const data = {
+    address : "Nghe An",
+    phone : "0967627873"
+  }
+
   return (
     <div className="todo-container">
       <div className="todo-title">Hi Hai</div>
       <TodoNew />
-      <TodoData />
+      <TodoData
+      name= {phanhai}
+      age={age}
+      data={data}
+      />
       <div className='todo-image'>
         <img src={reactLogo} className='logo'/>
       </div>
