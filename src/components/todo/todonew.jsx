@@ -8,7 +8,7 @@ const TodoNew = (props) => {
   // console.log("check props: ", props)
   const { addNewTodo } = props;
   const handClick = () => {
-    console.log("check value input: ", valueInput)
+    addNewTodo(valueInput)
   }
   const hendleOnChange = (name) => {
    
